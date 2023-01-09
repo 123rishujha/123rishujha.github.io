@@ -2,6 +2,7 @@ import React from 'react'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 import './header.css';
+import Profile from '../../assets/profile.png';
 
 
 
@@ -17,7 +18,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className='me'>
-          <img src='https://yt3.ggpht.com/1e3YYtJVyXfe6LsEZMVs4CvSKoqE4X8Ady_HfYfFzu7IOHfYGf-txJ_BIOy4-jxY0kPxcjmvHw=s88-c-k-c0x00ffffff-no-rj-mo' alt='me' />
+          <img src={Profile} alt='me' style={{width:'100',height:'100%',objectFit:'fill'}} />
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>

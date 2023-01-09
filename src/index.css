@@ -34,7 +34,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-bg);
+    background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
 }
@@ -58,6 +58,7 @@ h1{
 
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5{
@@ -81,12 +82,12 @@ a{
 
 a:hover{
     color: var(--color-white);
+    transition: var(--transition);
 }
 
 
-
-.btn:hover{
-    width: max-content;
+.btn{
+    width:max-content;
     display: inline-block;
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;
@@ -94,6 +95,13 @@ a:hover{
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+}
+
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
 }
 
 .btn-primary{
@@ -134,10 +142,5 @@ img{
         margin-bottom: 2rem;
     }
 }
-
-
-
-
-
 
 

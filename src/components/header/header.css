@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding: 7rem;
+    padding-top: 7rem;
     overflow: hidden;
 }
 
@@ -9,6 +9,7 @@ header{
     height: 100%;
     position: relative;
 }
+
 
 /* ------CAT---------------- */
 
@@ -48,9 +49,11 @@ header{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    /* left: calc(50% -11rem); */
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+    overflow:hidden;
 }
 
 
@@ -61,8 +64,27 @@ header{
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.9rem;
 }
+
+
+@media screen and (max-width: 1024px){
+    header{
+        height:68vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        height:100vh;
+    }
+    .header__socials,.scroll__down{
+        display: none;
+    }
+}
+
+
+
 
 
