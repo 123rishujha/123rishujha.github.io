@@ -1,30 +1,24 @@
-import About from "./components/about/About";
-import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
-import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
-import Portfolio from "./components/portfolio/Portfolio";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Testimonials from './components/testimonials/Testimonials';
-
-
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Skills from './components/Skills/Skills';
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Stats from './components/Stats/Stats';
 
 
 const App = ()=> {
     return (
-        <div>
-            <Header />
-            <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
-            <Footer />
-        </div>
-    )
+    <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Stats />
+        <Projects />
+        <Contact />
+    </div>
+   )
 }
 
 export default App;

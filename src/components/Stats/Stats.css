@@ -1,0 +1,16 @@
+.stats_container{
+    box-sizing: border-box;
+    border: 1px solid var(--light-blue);
+    width:90vw;
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.stats_container:hover{
+    background-color: var(--light-blue);
+}
+
+
+
