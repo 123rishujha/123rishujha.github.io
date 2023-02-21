@@ -14,7 +14,7 @@ const Contact = () => {
             <div style={{textAlign:'center',height:'50%',justifyContent:'center',alignItems:'center'}}>
               <h1>Contact - +919310146764</h1>
                 <h1>Email - 
-                  <a href="mailto:jharishu796@gmail.com" style={{color:'#5B8FB9', texDecoration:'none'}} >
+                  <a href="mailto:jharishu796@gmail.com" style={{color:'#b0eb0e', texDecoration:'none'}} >
                     jharishu796@gmail.com
                   </a>
                 </h1>
@@ -22,10 +22,10 @@ const Contact = () => {
             </div>
 
             <div>
-              <a href="https://www.linkedin.com/in/rishu-jha/" style={{backgroundColor:'#B6EADA',height:'100px',width:'100px',padding:'20px',fontSize:'55px',borderRadius:'5px'}}>
+              <a href="https://www.linkedin.com/in/rishu-jha/" style={{backgroundColor:'#f0b512',height:'100px',width:'100px',padding:'20px',fontSize:'55px',borderRadius:'5px'}}>
                 <AiFillLinkedin className='contact-icons' />
               </a>
-              <a href="https://github.com/123rishujha" style={{backgroundColor:'#B6EADA',height:'100px',width:'100px',padding:'20px',fontSize:'55px',marginLeft:'5px',borderRadius:'5px'}} >
+              <a href="https://github.com/123rishujha" style={{backgroundColor:'#f0b512',height:'100px',width:'100px',padding:'20px',fontSize:'55px',marginLeft:'5px',borderRadius:'5px'}} >
                 <BsGithub className='contact-icons'  />
               </a>
             </div>

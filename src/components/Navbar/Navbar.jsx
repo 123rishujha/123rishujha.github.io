@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css';
-import cv from '../../assets/resume.pdf';
+import cv from '../../assets/Rishu_Jha_Resume.pdf';
 import { useState } from 'react';
 import {RxCross1} from 'react-icons/rx';
 
@@ -9,6 +9,10 @@ const Navbar = () => {
   const [top,setTop] = useState(`-2000`);
   const [active,setActive] = useState('#home');
   
+  const handleResume = () =>{
+    window.open(`https://drive.google.com/drive/folders/1CNlzoCn-8Uk4Oi8dbRK2d_ZGfbwDN2iE`,'_blank');
+  }
+
 
   return (
     <div id='nav-menu' className='MainNavbar'>
@@ -18,22 +22,7 @@ const Navbar = () => {
         <a href="#skills" onClick={()=>setActive("#skills")} className={active==='#skills' ? 'active nav-link skills' : 'nav-link skills' } >Skills</a>
         <a href="#projects" onClick={()=>setActive("#projects")} className={active==='#projects' ? 'active nav-link projects' : 'nav-link projects' } >Projects</a>
         <a href="#contact" onClick={()=>setActive("#contact")} className={active==='#contact' ? 'active nav-link contact' : 'nav-link contact' } >Contact</a>
-        <a href="https://drive.google.com/file/d/1H40JiXHFK_tp2ycoWNkQlgN-JAXYQsjQ/view?usp=sharing" target="_blank" rel="noreferrer">
-          {/* <a href={cv} download >
-            <button style={{
-                  background:'none',
-                  color:'#5B8FB9',
-                  height:'100%',
-                  cursor:'pointer',
-                  textAlign:"center",
-                  borderRadius:'10px'
-                  }}
-                >
-                  Resume
-              </button>
-          </a> */}
-          Resume
-        </a>
+        <a href={cv} download={'Rishu_Jha_Resume'} onClick={handleResume} >Resume</a>
       </div>
       <button className='button_float' onClick={()=>setTop(top===`-2000` ? `0` : `-2000` )}>Menu</button>
 

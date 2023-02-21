@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects';
 import Stats from './components/Stats/Stats';
 
 
+
 const App = ()=> {
     return (
     <div>
@@ -22,3 +23,4 @@ const App = ()=> {
 }
 
 export default App;
+
