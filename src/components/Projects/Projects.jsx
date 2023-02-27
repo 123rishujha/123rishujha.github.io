@@ -50,6 +50,8 @@ const Projects = () => {
       <div className="projects_container">
         <h1 style={{ textDecoration: "underline",marginBottom:'10px' }}>Projects</h1>
 
+        {/* projects */}
+
         <div>
           {data.map((elem) => {
             return (
