@@ -14,7 +14,9 @@ const About = () => {
             a Problem-solving mindset, and 1200+ hrs of hands-on experience in
             developing fully functional applications. Looking forward to working
             as a developer and competent employee in an exciting tech company.
+            <button>Resume</button>
           </p>
+
           <Stats />
 
           <img
