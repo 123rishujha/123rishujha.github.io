@@ -1,16 +1,14 @@
-.stats_container{
-    box-sizing: border-box;
-    border: 1px solid var(--light-blue);
-    width:90vw;
-    margin: auto;
-    margin-top: 60px;
-    padding: 10px;
-    font-size: 10px;
+.stats_container {
+  box-sizing: border-box;
+  border: 1px solid #b0eb0e;
+  width: 80vw;
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 10px;
 }
 
-.stats_container:hover{
-    background-color: var(--light-blue);
+.stats_container:hover {
+  background-color: #b0eb0e62;
 }
-
-
-

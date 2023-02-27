@@ -11,14 +11,10 @@
 }
 
 :root {
-  /* --dark-blue:#03001C; */
-  --dark-blue: #19191f;
-  /* --purple: #301E67; */
-  --purple: #131313;
-  /* --sky-blue: #5B8FB9; */
-  --sky-blue: #b0eb0e;
-  /* --light-blue: #B6EADA; */
-  --light-blue: #f0b512;
+  --dark-blue: #19191f; /*background-color: gray; */
+  --purple: #131313; /*navbar-> light-black */
+  --sky-blue: #b0eb0e; /*light-green*/
+  --light-blue: #f0b512; /*orange*/
 }
 
 html {
