@@ -19,16 +19,25 @@ const About = () => {
 
           <Stats />
 
-          <img
-            id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=123rishujha&theme=highcontrast"
-            alt="github-streak-stats"
-          />
-          <img
-            id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=123rishujha&show_icons=true&theme=highcontrast"
-            alt="github-stats-card"
-          />
+          <div className="statesImages">
+            <img
+              id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=123rishujha&theme=highcontrast"
+              alt="github-streak-stats"
+            />
+            <img
+              id="github-stats-card"
+              src="https://github-readme-stats.vercel.app/api?username=123rishujha&show_icons=true&theme=highcontrast"
+              alt="github-stats-card"
+            />
+            <img
+              id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact"
+              alt="github-top-langs"
+              style={{ background: "black" }}
+            />
+          </div>
+          
         </div>
       </div>
     </div>
