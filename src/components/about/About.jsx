@@ -32,12 +32,11 @@ const About = () => {
             />
             <img
               id="github-top-langs"
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=123rishujha&layout=compact&title_color=b0eb13&bg_color=000000&text_color=62ca0e&border_color=#4f4f4f"
               alt="github-top-langs"
-              style={{ background: "black" }}
+              style={{ background: "black", maxHeight: "200px" }}
             />
           </div>
-          
         </div>
       </div>
     </div>

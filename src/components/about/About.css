@@ -43,7 +43,8 @@
 
 .statesImages img {
   width: 30%;
-  height: 100%;
+  height: 140px;
+  overflow: hidden;
   /* border: 1px solid red; */
   /* max-height: 300px; */
 }

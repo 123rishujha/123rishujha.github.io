@@ -6,7 +6,6 @@ import resell from "../../assets/resell.png";
 import stylish from "../../assets/stylish.png";
 
 const Projects = () => {
-  
   let data = [
     {
       title: "Beauty Bebo",
@@ -48,7 +47,9 @@ const Projects = () => {
   return (
     <div id="projects" className="projects_section section">
       <div className="projects_container">
-        <h1 style={{ textDecoration: "underline",marginBottom:'10px' }}>Projects</h1>
+        <h1 style={{ textDecoration: "underline", marginBottom: "10px" }}>
+          Projects
+        </h1>
 
         {/* projects */}
 
@@ -56,24 +57,26 @@ const Projects = () => {
           {data.map((elem) => {
             return (
               <div className="singleProject">
-                <img src={elem.img} alt={elem.title} className="projectImage" />
+                <img borderRedius='10px' src={elem.img} alt={elem.title} className="projectImage" />
                 <div className="projectDetails">
                   <h4>{elem.title}</h4>
                   <p>{elem.description}</p>
                   <div className="projectLinks">
-                    <a href={elem.github}>Github</a>
-                    <a href={elem.live}>Live</a>
+                    <a href={elem.github} target="_blank" rel="noreferrer">
+                      Github
+                    </a>
+                    <a href={elem.live} target="_blank" rel="noreferrer">
+                      Live
+                    </a>
                   </div>
                 </div>
               </div>
             );
           })}
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default Projects;
-
