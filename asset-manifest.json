@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.00f6d2c2.css",
-    "main.js": "/static/js/main.d12edf64.js",
+    "main.css": "/static/css/main.dd582c22.css",
+    "main.js": "/static/js/main.a0503e10.js",
     "static/media/stylish.png": "/static/media/stylish.144ae9e405dfe0e42d4a.png",
-    "static/media/dev_bg.gif": "/static/media/dev_bg.71062e98a91eaa7b235d.gif",
     "static/media/electronic.png": "/static/media/electronic.fecd126f2a95f7e485dc.png",
     "static/media/bebo.png": "/static/media/bebo.88f43099cd9eda1009cd.png",
     "static/media/resell.png": "/static/media/resell.a89cc01e599edbcab4c8.png",
     "static/media/profile.png": "/static/media/profile.a0b3c0f7ff58a25fce10.png",
-    "static/media/Rishu_Jha_Resume.pdf": "/static/media/Rishu_Jha_Resume.dad445056e81f92e96ce.pdf",
+    "static/media/Rishu_Jha_Resume.pdf": "/static/media/Rishu_Jha_Resume.6d19f0b1d59b62595749.pdf",
     "index.html": "/index.html",
-    "main.00f6d2c2.css.map": "/static/css/main.00f6d2c2.css.map",
-    "main.d12edf64.js.map": "/static/js/main.d12edf64.js.map"
+    "main.dd582c22.css.map": "/static/css/main.dd582c22.css.map",
+    "main.a0503e10.js.map": "/static/js/main.a0503e10.js.map"
   },
   "entrypoints": [
-    "static/css/main.00f6d2c2.css",
-    "static/js/main.d12edf64.js"
+    "static/css/main.dd582c22.css",
+    "static/js/main.a0503e10.js"
   ]
 }
