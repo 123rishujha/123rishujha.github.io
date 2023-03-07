@@ -4,13 +4,13 @@ import Stats from "../Stats/Stats";
 
 import cv from "../../assets/Rishu_Jha_Resume.pdf";
 
-
 const About = () => {
-  
-  const handleResume = () =>{
-    window.open(`https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`);
-  }
-  
+  const handleResume = () => {
+    window.open(
+      `https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`
+    );
+  };
+
   return (
     <div id="about" className="about_section section">
       <div className="about_container">
@@ -22,8 +22,10 @@ const About = () => {
             a Problem-solving mindset, and 1200+ hrs of hands-on experience in
             developing fully functional applications. Looking forward to working
             as a developer and competent employee in an exciting tech company.
-            <button>Resume</button>
-            <a href={cv} download="Rishu_Jha_Resume" onClick={handleResume}>Resume</a>
+            {/* <button>Resume</button> */}
+            <a href={cv} download="Rishu_Jha_Resume" onClick={handleResume}>
+              Resume
+            </a>
           </p>
 
           <Stats />

@@ -60,9 +60,10 @@
   color: silver;
 }
 
-.aboutPara button {
+.aboutPara a {
   margin-left: 10px;
-  padding: 10px;
+  margin-top: 30px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 10px;
   color: var(--dark-blue);
