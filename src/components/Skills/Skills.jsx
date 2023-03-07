@@ -17,53 +17,53 @@ const Skills = () => {
       <div className="skills_container">
         <h1 style={{textDecoration:'underline'}}>Technical Skills</h1>
         <div className="skill_grid">
-          <div>
-            <AiFillHtml5 className="skill_icons" />
-            <h3>HTML</h3>
+          <div className='skills-card'>
+            <AiFillHtml5 className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">HTML</h3>
           </div>
-          <div>
-            <DiCss3 className="skill_icons" />
-            <h3>CSS</h3>
+          <div className='skills-card'>
+            <DiCss3 className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">CSS</h3>
           </div>
-          <div>
-            <TbBrandJavascript className="skill_icons" />
-            <h3>JAVASCRIPT</h3>
+          <div className='skills-card'>
+            <TbBrandJavascript className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">JAVASCRIPT</h3>
           </div>
-          <div>
-            <FaReact className="skill_icons" />
-            <h3>REACT</h3>
+          <div className='skills-card'>
+            <FaReact className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">REACT</h3>
           </div>
-          <div>
-            <SiRedux className="skill_icons" />
-            <h3>REDUX</h3>
+          <div className='skills-card'>
+            <SiRedux className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">REDUX</h3>
           </div>
-          <div>
-            <SiChakraui className="skill_icons" />
-            <h3>CHAKRA UI</h3>
+          <div className='skills-card'>
+            <SiChakraui className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">CHAKRA UI</h3>
           </div>
-          <div>
-            <TbBrandNextjs className="skill_icons" />
-            <h3>Next js</h3>
+          <div className='skills-card'>
+            <TbBrandNextjs className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">Next js</h3>
           </div>
-          <div>
-            <SiTypescript className="skill_icons" />
-            <h3>Typescript</h3>
+          <div className='skills-card'>
+            <SiTypescript className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">Typescript</h3>
           </div>
-          <div>
-            <IoLogoNodejs className="skill_icons" />
-            <h3>Node js</h3>
+          <div className='skills-card'>
+            <IoLogoNodejs className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">Node js</h3>
           </div>
-          <div>
-            <SiMongodb className="skill_icons" />
-            <h3>MongoDB</h3>
+          <div className='skills-card'>
+            <SiMongodb className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">MongoDB</h3>
           </div>
-          <div>
-            <SiExpress className="skill_icons" />
-            <h3>Express js</h3>
+          <div className='skills-card'>
+            <SiExpress className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">Express js</h3>
           </div>
-          <div>
-            <SiCypress className="skill_icons" />
-            <h3>Cypress</h3>
+          <div className='skills-card'>
+            <SiCypress className="skill_icons skills-card-img" />
+            <h3 class="skills-card-name">Cypress</h3>
           </div>
         </div>
       </div>

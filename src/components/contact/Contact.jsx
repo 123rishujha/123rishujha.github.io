@@ -56,11 +56,12 @@ const Contact = () => {
           <div className="contact_cards">
             <div>
               <BiPhoneCall style={{ color: "purple" }} />
-              <p>+919310146764</p>
+              <p id="contact-phone">+919310146764</p>
             </div>
             <div>
               <AiOutlineMail style={{ color: "purple" }} />
               <a
+                id="contact-email"
                 href="mailto:jharishu796@gmail.com"
                 target="_blank"
                 style={{ textDecoration: "none" }}
@@ -72,6 +73,7 @@ const Contact = () => {
             <div>
               <AiFillLinkedin style={{ color: "purple" }} />
               <a
+                id="contact-linkedin"
                 href="https://www.linkedin.com/in/rishu-jha/"
                 target="_blank"
                 rel="noreferrer"
@@ -82,6 +84,7 @@ const Contact = () => {
             <div>
               <BsGithub style={{ color: "purple" }} />
               <a
+                id="contact-github"
                 href="https://github.com/123rishujha"
                 target="_blank"
                 rel="noreferrer"

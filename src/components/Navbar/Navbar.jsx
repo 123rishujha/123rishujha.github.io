@@ -67,7 +67,12 @@ const Navbar = () => {
         >
           Contact
         </a>
-        <a href={cv} download={"Rishu_Jha_Resume"} onClick={handleResume}>
+        <a
+          href={cv}
+          download={"Rishu_Jha_Resume"}
+          onClick={handleResume}
+          id="resume-link-1"
+        >
           Resume
         </a>
       </div>

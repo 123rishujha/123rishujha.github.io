@@ -9,7 +9,9 @@ const Home = () => {
       <div className="home_container" style={{ background: "black" }}>
         <div className="Home_text">
           <h1>Hii</h1>
-          <h1>I am Rishu Jha</h1>
+          <h1>
+            I am <span id="user-detail-name">Rishu Jha</span>
+          </h1>
           <h1>
             I'm{" "}
             <span style={{ color: "red", fontWeight: "bold" }}>
@@ -32,7 +34,7 @@ const Home = () => {
         </div>
 
         <div className="home_coding_gif">
-          <img src={profile} alt="" />
+          <img class="home-img" src={profile} alt="" />
         </div>
       </div>
     </div>

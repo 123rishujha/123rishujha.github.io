@@ -56,16 +56,26 @@ const Projects = () => {
         <div>
           {data.map((elem) => {
             return (
-              <div className="singleProject" key={elem.title}>
+              <div className="singleProject project-card" key={elem.title}>
                 <img src={elem.img} alt={elem.title} className="projectImage" />
                 <div className="projectDetails">
-                  <h4>{elem.title}</h4>
-                  <p>{elem.description}</p>
+                  <h4 class="project-title">{elem.title}</h4>
+                  <p class="project-description">{elem.description}</p>
                   <div className="projectLinks">
-                    <a href={elem.github} target="_blank" rel="noreferrer">
+                    <a
+                      class="project-github-link"
+                      href={elem.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Github
                     </a>
-                    <a href={elem.live} target="_blank" rel="noreferrer">
+                    <a
+                      class="project-deployed-link"
+                      href={elem.live}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Live
                     </a>
                   </div>
