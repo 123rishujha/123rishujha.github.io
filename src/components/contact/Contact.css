@@ -1,0 +1,128 @@
+.contact_section {
+  height: auto;
+  width: 93vw;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.contact_container {
+  margin-top: 56px;
+  padding: 10px;
+  height: 90%;
+  width: 100%;
+  text-align: left;
+  background-color: black;
+  /* border: 1px solid green; */
+  border-radius: 10px;
+  box-shadow: #b0eb0e 0px 5px 15px;
+}
+
+.contact_wraper {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_cards {
+  width: 35%;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+}
+
+.contact_cards div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  /* border: 1px solid #4f4f4f; */
+  color: orange;
+  background: #060506;
+  background: -webkit-linear-gradient(left, #060506, #a84d21);
+  background: -moz-linear-gradient(left, #060506, #a84d21);
+  background: linear-gradient(to right, #060506, #a84d21);
+}
+
+.contact_cards div a {
+  text-decoration: none;
+  color: orange;
+}
+
+.contact_form {
+  width: 60%;
+  /* border: 1px solid red; */
+}
+
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form > form > div {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact_form > form > div input {
+  width: 50%;
+  border-radius: 10px;
+  margin: 3px;
+  color: white;
+  height: 30px;
+  padding: 10px;
+  background: #060506;
+  background: -webkit-linear-gradient(left, #060506, #a84d21);
+  background: -moz-linear-gradient(left, #060506, #a84d21);
+  background: linear-gradient(to right, #060506, #a84d21);
+}
+
+
+.contact_form form textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  resize: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: white;
+  background: #060506;
+  background: -webkit-linear-gradient(left, #060506, #a84d21);
+  background: -moz-linear-gradient(left, #060506, #a84d21);
+  background: linear-gradient(to right, #060506, #a84d21);
+}
+
+.submitBtn {
+  padding: 10px;
+  margin-top: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: purple;
+  background: black;
+  /* Created with https://www.css-gradient.com */
+  background: #020c0d;
+  background: -webkit-radial-gradient(center, #020c0d, #234d19);
+  background: -moz-radial-gradient(center, #020c0d, #234d19);
+  background: radial-gradient(ellipse at center, #020c0d, #234d19);
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .contact_wraper {
+    flex-direction: column;
+  }
+  .contact_cards {
+    width: 100%;
+  }
+  .contact_form {
+    width: 100%;
+  }
+}

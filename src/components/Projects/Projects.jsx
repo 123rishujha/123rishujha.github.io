@@ -56,8 +56,8 @@ const Projects = () => {
         <div>
           {data.map((elem) => {
             return (
-              <div className="singleProject">
-                <img borderRedius='10px' src={elem.img} alt={elem.title} className="projectImage" />
+              <div className="singleProject" key={elem.title}>
+                <img src={elem.img} alt={elem.title} className="projectImage" />
                 <div className="projectDetails">
                   <h4>{elem.title}</h4>
                   <p>{elem.description}</p>

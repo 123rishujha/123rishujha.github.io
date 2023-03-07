@@ -15,7 +15,7 @@ const Home = () => {
             <span style={{ color: "red", fontWeight: "bold" }}>
               <Typewriter
                 words={[
-                  "Front End Developer",
+                  "Full Stack Web Developer",
                   "React Developer",
                   "Problem Solver",
                   "Javascript Developer",
