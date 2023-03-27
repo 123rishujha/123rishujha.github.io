@@ -70,7 +70,14 @@ const Navbar = () => {
         <a
           href={cv}
           download={"Rishu_Jha_Resume"}
-          onClick={handleResume}
+          // onClick={handleResume}
+          onclick={()=>{
+            window.open(
+              `https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`,
+              "_blank"
+            );
+          }}
+
           id="resume-button-1"
         >
           Resume
@@ -178,7 +185,11 @@ const Navbar = () => {
           className="nav-link resume"
           onClick={() => {
             setTop(`-2000`);
-            handleResume();
+            // handleResume();
+            window.open(
+              `https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`,
+              "_blank"
+            );
           }}
         >
           Resume
