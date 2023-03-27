@@ -170,13 +170,11 @@ const Navbar = () => {
         >
           Contact
         </a>
-        {/* <a href="#about" onClick={()=>setTop(`-2000`)}>About</a> */}
-        {/* <a href="#skills" onClick={()=>setTop(`-2000`)}>Skills</a> */}
-        {/* <a href="#projects" onClick={()=>setTop(`-2000`)}>Projects</a> */}
-        {/* <a href="#contact" onClick={()=>setTop(`-2000`)}>Contact</a> */}
+      
         <a
           href={cv}
           download
+          className="nav-link resume"
           onClick={() => {
             setTop(`-2000`);
             handleResume();
