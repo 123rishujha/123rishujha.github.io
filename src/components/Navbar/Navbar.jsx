@@ -71,7 +71,7 @@ const Navbar = () => {
           href={cv}
           download={"Rishu_Jha_Resume"}
           onClick={handleResume}
-          id="resume-link-1"
+          id="resume-button-1"
         >
           Resume
         </a>
@@ -172,6 +172,7 @@ const Navbar = () => {
         </a>
       
         <a
+          id="resume-button-1"
           href={cv}
           download
           className="nav-link resume"

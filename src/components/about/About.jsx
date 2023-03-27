@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="about_section section">
+    <div id="about" className="about_section about section">
       <div className="about_container">
         <h1 style={{ textDecoration: "underline" }}>About</h1>
         <div>
@@ -23,7 +23,7 @@ const About = () => {
             developing fully functional applications. Looking forward to working
             as a developer and competent employee in an exciting tech company.
             {/* <button>Resume</button> */}
-            <a href={cv} download="Rishu_Jha_Resume" onClick={handleResume}  id="resume-link-2">
+            <a id="resume-button-2" href={cv} download="Rishu_Jha_Resume" onClick={handleResume} >
               Resume
             </a>
           </p>
