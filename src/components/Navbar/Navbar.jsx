@@ -69,7 +69,6 @@ const Navbar = () => {
         </a>
         <a
           href={cv}
-          download={"Rishu_Jha_Resume"}
           // onClick={handleResume}
           onclick={()=>{
             window.open(
@@ -77,6 +76,7 @@ const Navbar = () => {
               "_blank"
             );
           }}
+          download={"Rishu_Jha_Resume"}
 
           id="resume-button-1"
         >
@@ -181,8 +181,6 @@ const Navbar = () => {
         <a
           id="resume-button-1"
           href={cv}
-          download
-          className="nav-link resume"
           onClick={() => {
             setTop(`-2000`);
             // handleResume();
@@ -191,6 +189,8 @@ const Navbar = () => {
               "_blank"
             );
           }}
+          download
+          className="nav-link resume"
         >
           Resume
         </a>
