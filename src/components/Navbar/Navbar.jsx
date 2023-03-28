@@ -177,7 +177,7 @@ const Navbar = () => {
         >
           Contact
         </a>
-      
+
         <a
           id="resume-button-1"
           href={cv}
