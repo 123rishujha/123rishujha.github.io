@@ -69,13 +69,7 @@ const Navbar = () => {
         </a>
         <a
           href={cv}
-          // onClick={handleResume}
-          onclick={()=>{
-            window.open(
-              `https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`,
-              "_blank"
-            );
-          }}
+          onClick={handleResume}
           download={"Rishu_Jha_Resume"}
 
           id="resume-button-1"
@@ -183,11 +177,7 @@ const Navbar = () => {
           href={cv}
           onClick={() => {
             setTop(`-2000`);
-            // handleResume();
-            window.open(
-              `https://drive.google.com/file/d/1a5DTB0q4dsLUaWrY86tez4KsmygPIvCt/view?usp=sharing`,
-              "_blank"
-            );
+            handleResume();
           }}
           download
           className="nav-link resume"
