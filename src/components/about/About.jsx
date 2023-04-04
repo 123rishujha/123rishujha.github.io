@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import Stats from "../Stats/Stats";
+import { BsDownload } from "react-icons/bs";
 
 import cv from "../../assets/Rishu_Jha_Resume.pdf";
 
@@ -16,17 +17,36 @@ const About = () => {
       <div className="about_container">
         <h1 style={{ textDecoration: "underline" }}>About</h1>
         <div>
-          <p className="aboutPara"  id="user-detail-intro">
-            A self-motivated, hard-working, and ambitious Full Stack Web
-            Developer and a good learner with proficiency in JavaScript. Having
-            a Problem-solving mindset, and 1200+ hrs of hands-on experience in
-            developing fully functional applications. Looking forward to working
-            as a developer and competent employee in an exciting tech company.
-            {/* <button>Resume</button> */}
-            <a id="resume-button-2" href={cv} download="Rishu_Jha_Resume" onClick={handleResume} >
-              Resume
-            </a>
+          <p className="aboutPara" id="user-detail-intro">
+            A self-motivated, hard-working, tech lover and ambitious Full Stack
+            Web Developer and a good learner with proficiency in HTML, CSS, JavaScript, React, Redux, NodeJS, Express, and Typescript.
+            Having a Problem-solving mindset, and 1200+ hrs of hands-on
+            experience in developing fully functional applications. Looking
+            forward to working as a developer and competent employee in an
+            exciting tech company.
           </p>
+          <button
+            id="resume-button-2"
+            style={{
+              background: "none",
+              // border: "1px solid red",
+              width: "auto",
+              padding: "0px",
+              borderRadius: "0px",
+              // cursor: "pointer",
+            }}
+            // onClick={handleResume}
+          >
+            <a
+              href={cv}
+              download="Rishu_Jha_Resume"
+              onClick={handleResume}
+              id="resume-link-2"
+            >
+              Resume
+              <BsDownload />
+            </a>
+          </button>
 
           <Stats />
 
