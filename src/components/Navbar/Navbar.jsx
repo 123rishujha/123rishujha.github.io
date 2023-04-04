@@ -29,9 +29,10 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
-          className={
-            active === "#about" ? "active nav-link about" : "nav-link about"
-          }
+          className="nav-link about"
+          // className={
+          //   active === "#about" ? "active nav-link about" : "nav-link about"
+          // }
         >
           About
         </a>
@@ -116,13 +117,14 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
+          className="nav-link about"
           // onClick={() => {
           //   setTop(`-2000`);
           //   setActive("#about");
           // }}
-          className={
-            active === "#about" ? "active nav-link about" : "nav-link about"
-          }
+          // className={
+          //   active === "#about" ? "active nav-link about" : "nav-link about"
+          // }
         >
           About
         </a>
