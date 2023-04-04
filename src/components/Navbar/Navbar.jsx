@@ -81,7 +81,8 @@ const Navbar = () => {
       </button>
 
       {/* responsive tabs */}
-      <div
+
+      {/* <div
         className="NavbarHolder_display"
         style={{
           top: `${top}%`,
@@ -181,7 +182,8 @@ const Navbar = () => {
         >
           Resume
         </a>
-      </div>
+      </div> */}
+      
     </div>
   );
 };
