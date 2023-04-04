@@ -6,7 +6,8 @@ import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
   const [top, setTop] = useState(`-2000`);
-  const [active, setActive] = useState("#home");
+  // const [active, setActive] = useState("#home");
+  const [active, setActive] = useState("");
 
   const handleResume = () => {
     window.open(
@@ -20,7 +21,6 @@ const Navbar = () => {
       <div className="NavbarHolder">
         <a
           href="#home"
-          onClick={() => setActive("#home")}
           className={
             active === "#home" ? "active nav-link home" : "nav-link home"
           }
@@ -29,7 +29,6 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
-          onClick={() => setActive("#about")}
           className={
             active === "#about" ? "active nav-link about" : "nav-link about"
           }
@@ -38,7 +37,6 @@ const Navbar = () => {
         </a>
         <a
           href="#skills"
-          onClick={() => setActive("#skills")}
           className={
             active === "#skills" ? "active nav-link skills" : "nav-link skills"
           }
@@ -47,7 +45,6 @@ const Navbar = () => {
         </a>
         <a
           href="#projects"
-          onClick={() => setActive("#projects")}
           className={
             active === "#projects"
               ? "active nav-link projects"
@@ -58,7 +55,6 @@ const Navbar = () => {
         </a>
         <a
           href="#contact"
-          onClick={() => setActive("#contact")}
           className={
             active === "#contact"
               ? "active nav-link contact"
@@ -108,10 +104,10 @@ const Navbar = () => {
         </div>
         <a
           href="#home"
-          onClick={() => {
-            setTop(`-2000`);
-            setActive("#home");
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   setActive("#home");
+          // }}
           className={
             active === "#home" ? "active nav-link home" : "nav-link home"
           }
@@ -120,10 +116,10 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
-          onClick={() => {
-            setTop(`-2000`);
-            setActive("#about");
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   setActive("#about");
+          // }}
           className={
             active === "#about" ? "active nav-link about" : "nav-link about"
           }
@@ -132,10 +128,10 @@ const Navbar = () => {
         </a>
         <a
           href="#skills"
-          onClick={() => {
-            setTop(`-2000`);
-            setActive("#skills");
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   setActive("#skills");
+          // }}
           className={
             active === "#skills" ? "active nav-link skills" : "nav-link skills"
           }
@@ -144,10 +140,10 @@ const Navbar = () => {
         </a>
         <a
           href="#projects"
-          onClick={() => {
-            setTop(`-2000`);
-            setActive("#projects");
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   setActive("#projects");
+          // }}
           className={
             active === "#projects"
               ? "active nav-link projects"
@@ -158,10 +154,10 @@ const Navbar = () => {
         </a>
         <a
           href="#contact"
-          onClick={() => {
-            setTop(`-2000`);
-            setActive("#contact");
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   setActive("#contact");
+          // }}
           className={
             active === "#contact"
               ? "active nav-link contact"
@@ -174,10 +170,10 @@ const Navbar = () => {
         <a
           id="resume-button-1"
           href={cv}
-          onClick={() => {
-            setTop(`-2000`);
-            handleResume();
-          }}
+          // onClick={() => {
+          //   setTop(`-2000`);
+          //   handleResume();
+          // }}
           download
           className="nav-link resume"
         >
