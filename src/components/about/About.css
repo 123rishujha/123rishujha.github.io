@@ -69,6 +69,18 @@
   color: var(--dark-blue);
   background: var(--light-blue);
 }
+#resume-link-2 {
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 700;
+}
+#resume-button-2 {
+  background: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .aboutPara {

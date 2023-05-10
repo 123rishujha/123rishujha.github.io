@@ -190,13 +190,12 @@
 
 // export default Navbar;
 
-
 import React from "react";
 import "./Navbar.css";
 import cv from "../../assets/Rishu_Jha_Resume.pdf";
 import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
-import { BsDownload } from 'react-icons/bs';
+import { BsDownload } from "react-icons/bs";
 
 const Navbar = () => {
   const [top, setTop] = useState(`-2000`);
@@ -275,7 +274,7 @@ const Navbar = () => {
             width: "auto",
             padding: "0px",
             borderRadius: "0px",
-            // cursor: "pointer",
+            fontSize: "18px",
           }}
           // onClick={handleResume}
         >
@@ -402,7 +401,6 @@ const Navbar = () => {
           Resume
         </a>
       </div>
-      
     </div>
   );
 };

@@ -60,9 +60,10 @@
 }
 
 .projectLinks a {
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  background-color: black;
+  background-color: blue;
+  color: white;
   box-shadow: #b0eb0e 0px 5px 15px;
 }
 

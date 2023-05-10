@@ -19,21 +19,20 @@ const About = () => {
         <div>
           <p className="aboutPara" id="user-detail-intro">
             A self-motivated, hard-working, tech lover and ambitious Full Stack
-            Web Developer and a good learner with proficiency in HTML, CSS, JavaScript, React, Redux, NodeJS, Express, and Typescript.
-            Having a Problem-solving mindset, and 1200+ hrs of hands-on
-            experience in developing fully functional applications. Looking
-            forward to working as a developer and competent employee in an
-            exciting tech company.
+            Web Developer and a good learner with proficiency in HTML, CSS,
+            JavaScript, React, Redux, NodeJS, Express, and Typescript. Having a
+            Problem-solving mindset, and 1200+ hrs of hands-on experience in
+            developing fully functional applications. Looking forward to working
+            as a developer and competent employee in an exciting tech company.
           </p>
           <button
             id="resume-button-2"
             style={{
-              background: "none",
-              // border: "1px solid red",
+              // background: "none",
               width: "auto",
               padding: "0px",
-              borderRadius: "0px",
-              // cursor: "pointer",
+              borderRadius: "10px",
+              cursor: "pointer",
             }}
             // onClick={handleResume}
           >
@@ -48,9 +47,9 @@ const About = () => {
             </a>
           </button>
 
-          <Stats />
+          {/* <Stats /> */}
 
-          <div className="statesImages">
+          {/* <div className="statesImages">
             <img
               id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com/?user=123rishujha&theme=highcontrast"
@@ -67,7 +66,7 @@ const About = () => {
               alt="github-top-langs"
               style={{ background: "black", maxHeight: "200px" }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
