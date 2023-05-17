@@ -74,3 +74,5 @@ const About = () => {
 };
 
 export default About;
+
+// Rishu_Jha_Resume.pdf
