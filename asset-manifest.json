@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b602b07.css",
-    "main.js": "/static/js/main.cc07ebbc.js",
+    "main.css": "/static/css/main.9b62a188.css",
+    "main.js": "/static/js/main.0b3ac02d.js",
     "static/media/stylish.png": "/static/media/stylish.144ae9e405dfe0e42d4a.png",
+    "static/media/amazon.png": "/static/media/amazon.b66769a9b014b359d15b.png",
     "static/media/electronic.png": "/static/media/electronic.fecd126f2a95f7e485dc.png",
     "static/media/bebo.png": "/static/media/bebo.88f43099cd9eda1009cd.png",
     "static/media/resell.png": "/static/media/resell.a89cc01e599edbcab4c8.png",
+    "static/media/bloggy.png": "/static/media/bloggy.fa545bd2962cb7e4858f.png",
     "static/media/profile.png": "/static/media/profile.a0b3c0f7ff58a25fce10.png",
     "static/media/Rishu_Jha_Resume.pdf": "/static/media/Rishu_Jha_Resume.535740af4615ace9f9ef.pdf",
     "index.html": "/index.html",
-    "main.7b602b07.css.map": "/static/css/main.7b602b07.css.map",
-    "main.cc07ebbc.js.map": "/static/js/main.cc07ebbc.js.map"
+    "main.9b62a188.css.map": "/static/css/main.9b62a188.css.map",
+    "main.0b3ac02d.js.map": "/static/js/main.0b3ac02d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b602b07.css",
-    "static/js/main.cc07ebbc.js"
+    "static/css/main.9b62a188.css",
+    "static/js/main.0b3ac02d.js"
   ]
 }
