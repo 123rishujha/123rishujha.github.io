@@ -196,6 +196,7 @@ import cv from "../../assets/Rishu_Jha_Resume.pdf";
 import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { BsDownload } from "react-icons/bs";
+import { BiMenuAltRight } from "react-icons/bi";
 
 const Navbar = () => {
   const [top, setTop] = useState(`-2000`);
@@ -297,7 +298,8 @@ const Navbar = () => {
         className="button_float"
         onClick={() => setTop(top === `-2000` ? `0` : `-2000`)}
       >
-        Menu
+        {/* Menu */}
+        <BiMenuAltRight className="hamburger" style={{ fontSize: "40pzx" }} />
       </button>
 
       {/* responsive tabs */}
@@ -392,11 +394,11 @@ const Navbar = () => {
         <a
           id="resume-button-1"
           href={cv}
+          download="Rishu_Jha_Resume"
           onClick={() => {
             setTop(`-2000`);
             handleResume();
           }}
-          download
         >
           Resume
         </a>

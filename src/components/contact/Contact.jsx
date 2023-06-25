@@ -78,7 +78,8 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn
+                {/* LinkedIn */}
+                rishu-jha
               </a>
             </div>
             <div>
@@ -89,7 +90,8 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                GitHub
+                {/* GitHub */}
+                123rishujha
               </a>
             </div>
           </div>

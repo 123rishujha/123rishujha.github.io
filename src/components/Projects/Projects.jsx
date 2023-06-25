@@ -4,16 +4,19 @@ import bebo from "../../assets/bebo.png";
 import electronic from "../../assets/electronic.png";
 import resell from "../../assets/resell.png";
 import stylish from "../../assets/stylish.png";
+import amazon from "../../assets/amazon.png";
+import bloggy from "../../assets/bloggy.png";
 
 const Projects = () => {
   let data = [
     {
-      title: "Beauty Bebo",
-      img: bebo,
-      description: "Ecommerce website where users can buy beauty product",
-      techstack: ["HTML,CSS,JAVASCRIPT"],
-      github: "https://github.com/Ujjawal0203/half-top-1982",
-      live: "https://sage-youtiao-e68d77.netlify.app/index.html",
+      title: "Amazon clone",
+      img: amazon,
+      description:
+        "This is an e-commerce website.where we can buy clothing,mobile,loptop and other products.we cloned most of the pages of the Amazon.com",
+      techstack: ["HTML,CSS,JAVASCRIPT,React Js"],
+      github: "https://github.com/123rishujha/pocketstore_amazon_clone",
+      live: "https://pocketstore.vercel.app/",
     },
     {
       title: "Stylish World",
@@ -25,13 +28,13 @@ const Projects = () => {
       live: "https://stylishworld.netlify.app/",
     },
     {
-      title: "Electronic Shop",
-      img: electronic,
+      title: "Bloggy",
+      img: bloggy,
       description:
-        "An e-commerce website that provides you with electronic-related products.",
+        "Dynamic blogging platform that allows users to read, create, and edit blogs. It features real-time chat functionality for engaging with other users",
       techstack: ["HTML,CSS,JAVASCRIPT", "REACT"],
-      github: "https://github.com/123rishujha/capricious-slope-3826",
-      live: "https://electronichshop.netlify.app/",
+      github: "https://github.com/123rishujha/bloggy",
+      live: "https://writebloggy.netlify.app/blogs",
     },
     {
       title: "Resell",

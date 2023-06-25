@@ -46,11 +46,12 @@
 }
 
 .home_coding_gif img {
-  height: 300px;
-  width: 270px;
+  /* height: 300px; */
+  /* width: 270px; */
   border-radius: 50%;
   border: 2px solid #131313;
   /* border: 2px solid #f0b512; */
+  object-fit: cover;
   box-shadow: #b0eb0e 0px 5px 15px;
 }
 
