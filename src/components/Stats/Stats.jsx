@@ -6,39 +6,53 @@ import GitHubCalendar from "react-github-calendar";
 // npm i react-github-calendar
 
 const Stats = () => {
+  // Theme colors from your CSS variables
+  const themeColors = {
+    background: "2c3e50",
+    border: "3498db",
+    title: "ffffff",
+    text: "7f8c8d",
+  };
+
   return (
     <div className="stats_section">
       <div className="stats_container">
-        <h1 style={{ textDecoration: "underline", textAlign: "left" }}>
-          GitHub Calendar
-        </h1>
+        <h1>GitHub Calendar</h1>
         <GitHubCalendar
           username="123rishujha"
           blockMargin={7}
           blockSize={15}
-          color={"#5B8FB9"}
-          hideColorLegend={true}
-          font-fontSize={10}
-          style={{ display: "flex", flexDirection: "column", margin: "auto" }}
+          fontSize={16}
+          style={{
+            width: "100%",
+            margin: "auto",
+            padding: "20px",
+          }}
+          theme={{
+            level0: "#2c3e50", // primary-main
+            level1: "#34495e", // secondary-main
+            level2: "#3498db", // primary-light
+            level3: "#6c8fa6", // secondary-light
+            level4: "#3498db", // primary-light (brightest)
+            background: "transparent",
+            text: "#ffffff", // text-main
+          }}
         />
         <div className="statesImages">
           <img
             id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=123rishujha&theme=highcontrast"
+            src={`https://github-readme-streak-stats.herokuapp.com/?user=123rishujha&background=${themeColors.background}&border=${themeColors.border}&ring=${themeColors.border}&fire=${themeColors.border}&currStreakNum=${themeColors.title}&sideNums=${themeColors.title}&currStreakLabel=${themeColors.text}&sideLabels=${themeColors.text}&dates=${themeColors.text}`}
             alt="github-streak-stats"
-            // style={{ width: "100%",margin:"auto" }}
           />
           <img
             id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=123rishujha&show_icons=true&theme=highcontrast"
+            src={`https://github-readme-stats.vercel.app/api?username=123rishujha&show_icons=true&bg_color=${themeColors.background}&title_color=${themeColors.title}&text_color=${themeColors.text}&icon_color=${themeColors.border}&border_color=${themeColors.border}`}
             alt="github-stats-card"
-            // style={{ width: "100%",margin:"auto" }}
           />
           <img
             id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=123rishujha&layout=compact&title_color=b0eb13&bg_color=000000&text_color=62ca0e&border_color=#4f4f4f"
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=123rishujha&layout=compact&bg_color=${themeColors.background}&title_color=${themeColors.title}&text_color=${themeColors.text}&border_color=${themeColors.border}`}
             alt="github-top-langs"
-            // style={{ width: "100%",margin:"0px" }}
           />
         </div>
       </div>
