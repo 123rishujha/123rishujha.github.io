@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import electronic from "../../assets/electronic.png";
+
 import stylish from "../../assets/stylish.png";
 import bloggy from "../../assets/bloggy.png";
 import youtube from "../../assets/youtube.png";
