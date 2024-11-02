@@ -3,9 +3,6 @@ import "./Projects.css";
 import electronic from "../../assets/electronic.png";
 import stylish from "../../assets/stylish.png";
 import bloggy from "../../assets/bloggy.png";
-// import bebo from "../../assets/bebo.png";
-// import resell from "../../assets/resell.png";
-// import amazon from "../../assets/amazon.png";
 import youtube from "../../assets/youtube.png";
 
 const Projects = () => {
