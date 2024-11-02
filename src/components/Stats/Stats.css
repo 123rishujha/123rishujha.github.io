@@ -1,53 +1,79 @@
 .stats_section {
-  height: auto;
-  width: 93vw;
-  margin: auto;
-  margin-bottom: 20px;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--primary-dark);
+  color: var(--text-main);
 }
 
 .stats_container {
-  margin-top: 56px;
-  height: 90%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  /* border: 1px solid red; */
-  background: black;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.stats_container h1 {
+  text-align: center;
+  color: var(--primary-light);
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* GitHub Calendar Styles */
+.stats_container :global(.react-github-calendar) {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px;
   padding: 20px;
-  text-align: left;
-  box-shadow: #b0eb0e 0px 5px 15px;
+  background-color: var(--primary-main);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.stats_container > h1 {
-  text-align: left;
-  font-size: 30px;
-}
-
+/* Stats Images Container */
 .statesImages {
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
 }
 
-#github-streak-stats {
-  margin: auto;
+.statesImages img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background-color: var(--primary-main);
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#github-stats-card {
-  margin: auto;
+.statesImages img:hover {
+  transform: translateY(-5px);
 }
 
-#github-top-langs {
-  margin: auto;
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .stats_container h1 {
+    font-size: 2rem;
+  }
 
-/* medium screen */
-@media screen and (min-width: 200px) and (max-width: 767px) {
   .statesImages {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .stats_container {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stats_container h1 {
+    font-size: 1.75rem;
+  }
+
+  .stats_section {
+    padding: 10px;
   }
 }

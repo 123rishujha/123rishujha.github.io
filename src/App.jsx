@@ -10,12 +10,14 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Home />
-      <About />
-      <Stats />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div style={{ margin: "80px 0px" }}>
+        <Home />
+        <About />
+        <Stats />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 };

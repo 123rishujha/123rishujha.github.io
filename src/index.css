@@ -11,10 +11,18 @@
 }
 
 :root {
-  --dark-blue: #19191f; /*background-color: gray; */
-  --purple: #131313; /*navbar-> light-black */
-  --sky-blue: #b0eb0e; /*light-green*/
-  --light-blue: #f0b512; /*orange*/
+  --primary-main: #2c3e50; 
+  --primary-light: #3498db; 
+  --primary-dark: rgba(17, 25, 40, 0.95);
+
+  --secondary-main: #34495e
+  --secondary-light: #6c8fa6;
+
+  --text-main: #ffffff; 
+  --text-secondary: #7f8c8d;
+
+  --bg-light: #f5f6fa; 
+  --bg-white: #ffffff; 
 }
 
 html {
@@ -27,16 +35,5 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--dark-blue);
-  color: var(--purple);
-  color: var(--sky-blue);
-  /* color: var(--light-blue); */
-}
-
-.section {
-  /* height: 100vh; */
-  background-color: var(--dark-blue);
-  border: 1px solid var(--dark-blue);
-  text-align: center;
-  box-sizing: border-box;
+  background-color: var(--primary-dark);
 }

@@ -1,32 +1,12 @@
 import React from "react";
 import "./Projects.css";
-import bebo from "../../assets/bebo.png";
 import electronic from "../../assets/electronic.png";
-import resell from "../../assets/resell.png";
 import stylish from "../../assets/stylish.png";
-import amazon from "../../assets/amazon.png";
 import bloggy from "../../assets/bloggy.png";
+import youtube from "../../assets/youtube.png";
 
 const Projects = () => {
   let data = [
-    {
-      title: "Amazon clone",
-      img: amazon,
-      description:
-        "This is an e-commerce website.where we can buy clothing,mobile,loptop and other products.we cloned most of the pages of the Amazon.com",
-      techstack: ["HTML,CSS,JAVASCRIPT,React Js"],
-      github: "https://github.com/123rishujha/pocketstore_amazon_clone",
-      live: "https://pocketstore.vercel.app/",
-    },
-    {
-      title: "Stylish World",
-      img: stylish,
-      description:
-        "An e-commerce website that provides you with fashion-related products.",
-      techstack: ["HTML,CSS,JAVASCRIPT", "REACT"],
-      github: "https://github.com/123rishujha/intelligent-tray-2816",
-      live: "https://stylishworld.netlify.app/",
-    },
     {
       title: "Bloggy",
       img: bloggy,
@@ -37,29 +17,46 @@ const Projects = () => {
       live: "https://writebloggy.netlify.app/blogs",
     },
     {
-      title: "Resell",
-      img: resell,
+      title: "youtube-clone",
+      img: youtube,
       description:
-        "Ecommerce website where users can do online shopping and search for their choice",
-      techstack: ["HTML,CSS,JAVASCRIPT", "REACT", "REDUX"],
-      github: "https://github.com/PriyanshuPatil/quikr-bazaar",
-      live: "https://resellvalue.netlify.app/",
+        "This is the clone of Youtube, users can search for videos and play the video and can filter the video based on the category",
+      techstack: ["HTML,CSS,JAVASCRIPT,React Js"],
+      github: "https://github.com/123rishujha/youtube-clone",
+      live: "https://youtube-chi-dusky.vercel.app/",
     },
+    {
+      title: "Stylish World",
+      img: stylish,
+      description:
+        "An e-commerce website that provides you with fashion-related products.",
+      techstack: ["HTML,CSS,JAVASCRIPT", "REACT"],
+      github: "https://github.com/123rishujha/intelligent-tray-2816",
+      live: "https://stylishworld.netlify.app/",
+    },
+
+    // {
+    //   title: "Resell",
+    //   img: resell,
+    //   description:
+    //     "Ecommerce website where users can do online shopping and search for their choice",
+    //   techstack: ["HTML,CSS,JAVASCRIPT", "REACT", "REDUX"],
+    //   github: "https://github.com/PriyanshuPatil/quikr-bazaar",
+    //   live: "https://resellvalue.netlify.app/",
+    // },
   ];
 
   return (
     <div id="projects" className="projects_section section">
       <div className="projects_container">
-        <h1 style={{ textDecoration: "underline", marginBottom: "10px" }}>
-          Projects
-        </h1>
+        <h1>Projects</h1>
 
         {/* projects */}
 
-        <div>
+        <div style={{ marginTop: "20px" }}>
           {data.map((elem) => {
             return (
-              <div className="singleProject project-card" key={elem.title}>
+              <div className="singleProject" key={elem.title}>
                 <img src={elem.img} alt={elem.title} className="projectImage" />
                 <div className="projectDetails">
                   <h4 class="project-title">{elem.title}</h4>

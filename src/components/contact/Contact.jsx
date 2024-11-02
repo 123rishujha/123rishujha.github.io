@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact_section section">
       <div className="contact_container">
-        <h1 style={{ textDecoration: "underline" }}>Contact</h1>
+        <h1>Contact</h1>
         <div className="contact_wraper">
           <div className="contact_cards">
             <div>

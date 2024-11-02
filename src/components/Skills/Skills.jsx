@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <div id="skills" className="skills_section section">
       <div className="skills_container">
-        <h1 style={{textDecoration:'underline'}}>Technical Skills</h1>
+        <h1>Technical Skills</h1>
         <div className="skill_grid">
           <div className='skills-card'>
             <AiFillHtml5 className="skill_icons skills-card-img" />

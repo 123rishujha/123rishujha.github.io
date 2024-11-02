@@ -1,41 +1,27 @@
 import React from "react";
 import "./Home.css";
 import profile from "../../assets/profile.png";
-import { Typewriter } from "react-simple-typewriter";
+// import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
-    <div id="home" className="home_section section">
-      <div className="home_container" style={{ background: "black" }}>
-        <div className="Home_text">
-          <h1>Hii</h1>
-          <h1>
-            I am <span id="user-detail-name">Rishu Jha</span>
-          </h1>
-          <h1>
-            I'm{" "}
-            <span style={{ color: "red", fontWeight: "bold" }}>
-              <Typewriter
-                words={[
-                  "Full Stack Web Developer",
-                  "React Developer",
-                  "Problem Solver",
-                  "Javascript Developer",
-                ]}
-                loop={true}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={100}
-                delaySpeed={2000}
-              />
-            </span>
-          </h1>
+    <div id="home">
+      <div>
+        <div className="intro">
+          <h1 style={{ color: "var(--text-main)" }}>RISHU JHA</h1>
+          <h2>Solving Problems, Byte by Byte.</h2>
+          <p>
+            An enthusiastic Full-stack web developer with hands-on experience in
+            developing, collaborating & managing projects. Highly skilled
+            decision-maker and problem solver.
+          </p>
         </div>
-
-        <div className="home_coding_gif">
-          <img class="home-img" src={profile} alt="" />
+        <div className="image-holder">
+          <img className="profile-image" src={profile} alt="" />
         </div>
+        <p style={{ color: "var(--primary-light)" }}>
+          Full Stack Mern Developer
+        </p>
       </div>
     </div>
   );

@@ -1,105 +1,196 @@
-.about_section {
-  height: auto;
-  width: 93vw;
-  margin: auto;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  background-color: black;
+/* #about {
+  padding: 10px;
+  background-color: var(--bg-white);
+  text-align: center;
 }
 
 .about_container {
-  margin-top: 56px;
-  padding: 10px;
-  height: 90%;
-  width: 100%;
-  text-align: left;
-  background-color: black;
-  /* border: 1px solid green; */
-  border-radius: 10px;
-  box-shadow: #b0eb0e 0px 5px 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about_container > h1 {
+  color: var(--primary-light);
 }
 
 .about_container > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  gap: 10px;
-  padding: 20px;
-  /* border: 1px solid red; */
-}
-
-.about_container > div > div {
-  /* border: 1px solid red; */
-  width: 90%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.statesImages img {
-  width: 30%;
-  height: 140px;
-  overflow: hidden;
-  /* border: 1px solid red; */
-  /* max-height: 300px; */
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
 }
 
 .aboutPara {
+  font-weight: 500;
   font-size: 20px;
+  text-align: justify;
+  max-width: 800px;
+  color: var(--secondary-main);
+}
+
+.animeCoder-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+} */
+
+#about {
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-white) 0%,
+    rgba(240, 244, 247, 0.8) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about_container > h1 {
+  color: var(--primary-light);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.about_container > h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary-light);
+  border-radius: 2px;
+}
+
+.about_container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap-reverse;
+}
+
+.about-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.animeCoder-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 8px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animeCoder-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.aboutPara {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-main);
+  margin-bottom: 2rem;
   text-align: left;
-  color: #f0b512;
-  width: 80vw;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
-.aboutPara:hover {
-  color: silver;
-}
-
-.aboutPara a {
-  margin-left: 10px;
-  margin-top: 30px;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 10px;
-  color: var(--dark-blue);
-  background: var(--light-blue);
-}
-#resume-link-2 {
-  color: white;
-  padding: 10px;
-  display: inline-block;
-  border-radius: 10px;
-  font-weight: 700;
-}
 #resume-button-2 {
-  background: blue;
-  padding: 10px;
-  border-radius: 10px;
+  background: none;
+  border: none;
+  margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 200px) and (max-width: 768px) {
-  .aboutPara {
-    font-size: 13px;
+#resume-button-2 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-light);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#resume-button-2 a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: var(--primary-dark);
+}
+
+#resume-button-2 svg {
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 4rem 1rem;
+  }
+
+  .about_container > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .about_container > div {
-    margin-top: 10px;
-    padding: 10px;
+    gap: 2rem;
   }
 
-  .about_container > div > div {
-    flex-direction: column;
-    justify-content: center;
+  .animeCoder-image {
+    width: 220px;
+    height: 220px;
   }
 
-  .statesImages img {
-    width: 90%;
-    height: 30%;
-    /* border: 1px solid red; */
-    margin-bottom: 5px;
+  .aboutPara {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .animeCoder-image {
+    width: 180px;
+    height: 180px;
   }
 }
